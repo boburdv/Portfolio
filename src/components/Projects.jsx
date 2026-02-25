@@ -3,8 +3,8 @@
 export default function Projects({ data }) {
   return (
     <div className="mt-8 grid gap-8 md:grid-cols-2">
-      {data.map(({ id, title, description, tech, github, live }) => (
-        <article key={id} className="group overflow-hidden rounded-2xl border border-gray-200 bg-white">
+      {data.map(({ id, title, description, tech, github, live }, index) => (
+        <article key={id} className={`group overflow-hidden rounded-2xl border border-gray-200 bg-white fade-up ${index === 0 ? "d300" : index === 1 ? "d400" : index === 2 ? "d500" : "d500"}`}>
           <div className="p-6">
             <h3 className="mb-2 text-xl font-semibold text-[#162232]">{title}</h3>
 

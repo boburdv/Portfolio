@@ -32,13 +32,13 @@ export default function Header() {
         </nav>
 
         <button onClick={() => setOpen(!open)} className="relative h-6 w-6 md:hidden">
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "rotate-45" : "-translate-y-2"}`} />
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "opacity-0" : ""}`} />
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "-rotate-45" : "translate-y-2"}`} />
+          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-400 ${open ? "rotate-45" : "-translate-y-2"}`} />
+          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-400 ${open ? "opacity-0" : ""}`} />
+          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-400 ${open ? "-rotate-45" : "translate-y-2"}`} />
         </button>
       </div>
 
-      <div className={`overflow-hidden transition-all duration-300 md:hidden ${open ? "max-h-60 shadow-sm" : "max-h-0"}`}>
+      <div className={`overflow-hidden transition-all duration-500 md:hidden ${open ? "max-h-60 shadow-sm" : "max-h-0"}`}>
         <nav className="flex flex-col gap-6 p-5 text-lg text-gray-500">
           <Link href="/" onClick={() => setOpen(false)}>
             Home
