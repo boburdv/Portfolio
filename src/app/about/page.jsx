@@ -26,7 +26,7 @@ export default function About() {
             </div>
 
             <div className="fade-up d500 mt-6 flex justify-center gap-4 md:justify-start">
-              <Link href="/cv.pdf" target="_blank">
+              <Link href="/Boburbek-Resume.pdf" target="_blank">
                 <Button variant="primary">View Resume</Button>
               </Link>
 
