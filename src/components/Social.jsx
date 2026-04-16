@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTelegram, FaFileAlt } from "react-icons/fa";
 export default function Social() {
   return (
     <div className="flex gap-6 text-[#162232]">
-      <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="/Boburbek-Resume.pdf" target="_blank" rel="noopener noreferrer">
         <FaFileAlt size={23} />
       </a>
       <a href="https://github.com/boburdv" target="_blank" rel="noopener noreferrer">
