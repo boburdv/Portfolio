@@ -22,7 +22,7 @@ export default function Hero() {
             </h1>
 
             
-            <h2 className="fade-up d300 mt-2 text-2xl text-gray-500 md:text-[36px]">
+            <h2 className="fade-up d300 mt-2 text-[28px] text-gray-500 md:text-3xl">
               Frontend Developer
             </h2>
 
