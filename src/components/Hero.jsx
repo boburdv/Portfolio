@@ -32,7 +32,7 @@ export default function Hero() {
                 <Button variant="primary">View Projects</Button>
               </Link>
               <Link href="/about">
-                <Button variant="secondary">More About Me</Button>
+                <Button variant="secondary">About Me</Button>
               </Link>
             </div>
 
