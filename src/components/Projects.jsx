@@ -2,17 +2,17 @@
 
 export default function Projects({ data }) {
   return (
-    <div className="mt-8 grid gap-8 md:grid-cols-2">
+    <div className="mt-6 md:mt-8 grid gap-6 md:gap-8 md:grid-cols-2">
       {data.map(({ id, title, description, tech, github, live }, index) => (
         <article key={id} className={`group overflow-hidden rounded-2xl border border-gray-200 bg-white fade-up ${index === 0 ? "d300" : index === 1 ? "d400" : index === 2 ? "d500" : "d500"}`}>
-          <div className="p-6">
-            <h3 className="mb-2 text-xl font-semibold text-[#162232]">{title}</h3>
+          <div className="p-5 md:p-6">
+            <h3 className="mb-2 text-lg md:text-xl font-semibold text-[#162232]">{title}</h3>
 
-            <p className="mb-4 leading-relaxed text-gray-600">{description}</p>
+            <p className="mb-4 text-sm md:text-base leading-relaxed text-gray-600">{description}</p>
 
             <div className="mb-5 flex flex-wrap gap-2">
               {tech.map((item) => (
-                <span key={item} className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-medium text-[#162232]">
+                <span key={item} className="rounded-full border border-gray-200 bg-white px-2.5 py-1 md:px-3 text-xs font-medium text-[#162232]">
                   {item}
                 </span>
               ))}
