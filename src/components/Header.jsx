@@ -1,10 +1,14 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isProjects = pathname === "/projects";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 1);
@@ -13,7 +17,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed left-0 top-0 z-50 w-full bg-white transition-all ${scrolled ? "border-b border-gray-200" : "border-b-transparent"}`}>
+    <header className={`${isProjects ? "fixed left-0 top-0 z-50" : "relative"} w-full bg-white transition-all ${scrolled ? "border-b border-gray-200" : "border-b-transparent"}`}>
       <div className="mx-auto flex max-w-5xl items-center justify-between p-5">
         <Link href="/" className="text-[26px] font-bold text-[#162232]">
           Boburbek
