@@ -4,8 +4,8 @@ import Social from "./Social";
 
 export default function Hero() {
   return (
-    <section className="flex min-h-[calc(100vh-140px)] items-center justify-center py-4 md:py-0">
-      <div className="mx-auto w-full max-w-5xl p-5">
+    <section className="flex min-h-[calc(100vh-140px)] items-center justify-center ">
+      <div className="mx-auto w-full max-w-5xl px-5">
         <div className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10">
           <img 
             src="/me-sd.jpg" 
