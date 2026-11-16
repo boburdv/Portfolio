@@ -3,18 +3,18 @@ import { FaGithub, FaLinkedin, FaTelegram, FaFileAlt } from "react-icons/fa";
 
 export default function Social() {
   return (
-    <div className="flex gap-6 text-[#162232]">
+    <div className="flex gap-5 sm:gap-6 text-[#162232]">
       <a href="/Boburbek-Resume.pdf" target="_blank" rel="noopener noreferrer">
-        <FaFileAlt size={23} />
+        <FaFileAlt className="text-[20px] sm:text-[23px]" />
       </a>
       <a href="https://github.com/boburdv" target="_blank" rel="noopener noreferrer">
-        <FaGithub size={24} />
+        <FaGithub className="text-[21px] sm:text-[24px]" />
       </a>
       <a href="https://linkedin.com/in/boburdv" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin size={24} />
+        <FaLinkedin className="text-[21px] sm:text-[24px]" />
       </a>
       <a href="https://t.me/boburdv" target="_blank" rel="noopener noreferrer">
-        <FaTelegram size={24} />
+        <FaTelegram className="text-[21px] sm:text-[24px]" />
       </a>
     </div>
   );
