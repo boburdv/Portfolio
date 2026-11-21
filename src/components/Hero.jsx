@@ -4,7 +4,7 @@ import Social from "./Social";
 
 export default function Hero() {
   return (
-    <section className="flex min-h-[calc(100vh-140px)] items-start pt-8 pb-10 md:items-center md:justify-center md:py-0">
+    <section className="flex pt-4 pb-8 md:min-h-[calc(100vh-140px)] md:items-center md:justify-center md:pt-0 md:pb-0 md:py-0">
       <div className="mx-auto w-full max-w-5xl px-5">
         <div className="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-10">
           <img 
