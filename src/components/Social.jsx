@@ -1,12 +1,13 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTelegram, FaFileAlt, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram, FaFileAlt } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 export default function Social({ showInstagram = false }) {
   return (
     <div className="flex gap-6 sm:gap-6 text-[#162232]">
       {showInstagram ? (
         <a href="https://instagram.com/boburdv" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-[22px] sm:text-[24px]" />
+          <FaSquareInstagram className="text-[22px] sm:text-[24px]" />
         </a>
       ) : (
         <a href="/Boburbek-Resume.pdf" target="_blank" rel="noopener noreferrer">
