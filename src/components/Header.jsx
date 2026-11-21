@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -37,9 +38,9 @@ export default function Header() {
         </nav>
 
         <button onClick={() => setOpen(!open)} className="relative h-6 w-6 md:hidden">
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "rotate-45" : "-translate-y-2"}`} />
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "-translate-x-3 opacity-0" : "translate-x-0 opacity-100"}`} />
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "-rotate-45" : "translate-y-2"}`} />
+          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "-rotate-45" : "-translate-y-2"}`} />
+          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "-translate-x-1.5 opacity-0" : "translate-x-0 opacity-100"}`} />
+          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "rotate-45" : "translate-y-2"}`} />
         </button>
       </div>
 
