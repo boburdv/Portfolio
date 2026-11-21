@@ -39,7 +39,7 @@ export default function Header() {
         <button onClick={() => setOpen(!open)} aria-label="Toggle menu" className="relative h-6 w-6 md:hidden">
           <span
             className={`absolute left-0 top-1/2 h-[2px] w-full origin-right bg-[#162232] transition-all duration-300 ${
-              open ? "translate-y-[8.5px] -rotate-45" : "-translate-y-2"
+              open ? "rotate-45" : "-translate-y-2"
             }`}
           />
           <span
@@ -49,7 +49,7 @@ export default function Header() {
           />
           <span
             className={`absolute left-0 top-1/2 h-[2px] w-full origin-right bg-[#162232] transition-all duration-300 ${
-              open ? "-translate-y-[8.5px] rotate-45" : "translate-y-2"
+              open ? "-rotate-45" : "translate-y-2"
             }`}
           />
         </button>
