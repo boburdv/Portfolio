@@ -37,7 +37,7 @@ export default function About() {
             </div>
 
             <div className="fade-up d500 mt-5 md:mt-6 flex justify-center md:justify-start">
-              <Social />
+              <Social showInstagram />
             </div>
           </div>
         </div>
