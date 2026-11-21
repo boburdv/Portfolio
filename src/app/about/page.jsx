@@ -2,15 +2,16 @@
 
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import Social from "@/components/Social";
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind", "TypeScript", "Git"];
 
 export default function About() {
   return (
     <section className="flex min-h-[calc(100vh-80px)] items-center">
-      <div className="mx-auto w-full max-w-5xl p-5">
-        <div className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10">
-          <img src="/me-sd.jpg" alt="Boburbek" className="fade-up h-36 w-36 md:h-52 md:w-52 rounded-full object-cover" />
+      <div className="mx-auto w-full max-w-5xl px-5 py-4 md:p-5">
+        <div className="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-10">
+          <img src="/me-sd.jpg" alt="Boburbek" className="fade-up h-32 w-32 md:h-52 md:w-52 rounded-full object-cover" />
 
           <div className="text-center md:text-left">
             <h1 className="fade-up d200 text-[32px] md:text-[45px] font-extrabold text-[#162232]">About me</h1>
@@ -25,7 +26,7 @@ export default function About() {
               ))}
             </div>
 
-            <div className="fade-up d500 mt-5 md:mt-6 flex justify-center gap-3 md:gap-4 md:justify-start">
+            <div className="fade-up d500 mt-5 md:mt-6 flex justify-center gap-3.5 md:gap-4 md:justify-start">
               <Link href="/Boburbek-Resume.pdf" target="_blank">
                 <Button variant="primary">View Resume</Button>
               </Link>
@@ -33,6 +34,10 @@ export default function About() {
               <Link href="/projects">
                 <Button variant="secondary">Projects</Button>
               </Link>
+            </div>
+
+            <div className="fade-up d500 mt-5 md:mt-6 flex justify-center md:justify-start">
+              <Social />
             </div>
           </div>
         </div>
