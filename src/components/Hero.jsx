@@ -4,25 +4,25 @@ import Social from "./Social";
 
 export default function Hero() {
   return (
-    <section className="flex pt-4 pb-8 md:min-h-[calc(100vh-140px)] md:items-center md:justify-center md:pt-0 md:pb-0 md:py-0">
+    <section className="flex pt-4 pb-8 md:min-h-[calc(100vh-140px)] md:items-center md:justify-center md:py-0">
       <div className="mx-auto w-full max-w-5xl px-5">
         <div className="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-10">
-          <img 
-            src="/me-sd.jpg" 
-            alt="Boburbek" 
-            className="fade-up h-36 w-36 md:h-52 md:w-52 rounded-full object-cover shadow-lg" 
+          <img
+            src="/me-sd.jpg"
+            alt="Boburbek"
+            className="h-36 w-36 rounded-full object-cover shadow-lg md:h-52 md:w-52"
           />
 
           <div className="text-center md:text-left">
-            <h1 className="fade-up d200 text-[32px] md:text-[45px] font-extrabold tracking-tight text-[#162232] leading-tight">
-              Hi, I'm Boburbek
+            <h1 className="text-[32px] font-extrabold leading-tight tracking-tight text-[#162232] md:text-[45px]">
+              Hi, I&apos;m Boburbek
             </h1>
 
-            <h2 className="fade-up d300 mt-2 text-[20px] md:text-[28px] text-gray-500 lg:md:text-3xl">
+            <h2 className="mt-2 text-[20px] text-gray-500 md:text-[28px] lg:text-3xl">
               Frontend Developer
             </h2>
 
-            <div className="fade-up d400 mt-5 md:mt-6 flex flex-wrap justify-center gap-3 md:gap-4 md:justify-start">
+            <div className="mt-5 flex flex-wrap justify-center gap-3 md:mt-6 md:justify-start md:gap-4">
               <Link href="/projects">
                 <Button variant="primary">View Projects</Button>
               </Link>
@@ -31,7 +31,7 @@ export default function Hero() {
               </Link>
             </div>
 
-            <div className="fade-up d500 mt-6 md:mt-8 flex justify-center md:justify-start">
+            <div className="mt-6 flex justify-center md:mt-8 md:justify-start">
               <Social />
             </div>
           </div>
