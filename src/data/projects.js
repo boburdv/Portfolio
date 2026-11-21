@@ -13,6 +13,6 @@ export const projects = [
     description: "An informational portal and digital fair platform for Vocational College No. 1 to showcase college details and order student products.",
     tech: ["React", "Supabase", "Vite", "Tailwind CSS", "daisyUI"],
     github: "https://github.com/boburdv/1-Texnikum",
-    live: "https://1-texnikum.vercel.app",
+    live: "https://r1-texnikum.vercel.app",
   },
 ];
