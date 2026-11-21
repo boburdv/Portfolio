@@ -4,9 +4,9 @@ import Social from "./Social";
 
 export default function Hero() {
   return (
-    <section className="flex min-h-[calc(100vh-140px)] items-center justify-center py-4 md:py-0">
-      <div className="mx-auto w-full max-w-5xl p-5">
-        <div className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10">
+    <section className="flex min-h-[calc(100vh-140px)] items-start pt-8 pb-10 md:items-center md:justify-center md:py-0">
+      <div className="mx-auto w-full max-w-5xl px-5">
+        <div className="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-10">
           <img 
             src="/me-sd.jpg" 
             alt="Boburbek" 
@@ -15,7 +15,7 @@ export default function Hero() {
 
           <div className="text-center md:text-left">
             <h1 className="fade-up d200 text-[32px] md:text-[45px] font-extrabold tracking-tight text-[#162232] leading-tight">
-              Hi I'm Boburbek
+              Hi, I'm Boburbek
             </h1>
 
             <h2 className="fade-up d300 mt-2 text-[20px] md:text-[28px] text-gray-500 lg:md:text-3xl">
