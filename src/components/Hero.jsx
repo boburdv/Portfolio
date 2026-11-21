@@ -7,10 +7,10 @@ export default function Hero() {
     <section className="flex min-h-[calc(100vh-140px)] items-center justify-center py-4 md:py-0">
       <div className="mx-auto w-full max-w-5xl p-5">
         <div className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10">
-          <img 
-            src="/me-sd.jpg" 
-            alt="Boburbek" 
-            className="fade-up h-36 w-36 md:h-52 md:w-52 rounded-full object-cover shadow-lg" 
+          <img
+            src="/me-sd.jpg"
+            alt="Boburbek"
+            className="fade-up h-32 w-32 md:h-52 md:w-52 rounded-full object-cover shadow-lg"
           />
 
           <div className="text-center md:text-left">
@@ -22,7 +22,7 @@ export default function Hero() {
               Frontend Developer
             </h2>
 
-            <div className="fade-up d400 mt-5 md:mt-6 flex flex-wrap justify-center gap-3 md:gap-4 md:justify-start">
+            <div className="fade-up d400 mt-5 md:mt-6 flex flex-wrap justify-center gap-3.5 md:gap-4 md:justify-start">
               <Link href="/projects">
                 <Button variant="primary">View Projects</Button>
               </Link>
