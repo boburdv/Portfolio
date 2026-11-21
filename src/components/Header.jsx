@@ -36,11 +36,24 @@ export default function Header() {
           </Link>
         </nav>
 
-        <button onClick={() => setOpen(!open)} className="relative h-6 w-6 md:hidden">
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "rotate-45" : "-translate-y-2"}`} />
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "-translate-x-1.5 opacity-0" : "translate-x-0 opacity-100"}`} />
-          <span className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${open ? "-rotate-45" : "translate-y-2"}`} />
-        </button>
+        <button onClick={() => setOpen(!open)} aria-label="Toggle menu" className="relative h-6 w-6 md:hidden">
+  <span
+    className={`absolute left-0 top-1/2 h-[2px] w-full origin-left bg-[#162232] transition-all duration-300 ${
+      open ? "-translate-y-[8.5px] translate-x-[3.5px] rotate-45" : "-translate-y-2"
+    }`}
+  />
+  <span
+    className={`absolute left-0 top-1/2 h-[2px] w-full bg-[#162232] transition-all duration-300 ${
+      open ? "-translate-x-1.5 opacity-0" : "translate-x-0 opacity-100"
+    }`}
+  />
+  <span
+    className={`absolute left-0 top-1/2 h-[2px] w-full origin-left bg-[#162232] transition-all duration-300 ${
+      open ? "translate-y-[8.5px] translate-x-[3.5px] -rotate-45" : "translate-y-2"
+    }`}
+  />
+</button>
+
       </div>
 
       <div className={`overflow-hidden transition-all duration-500 md:hidden ${open ? "max-h-60 shadow-sm" : "max-h-0"}`}>
