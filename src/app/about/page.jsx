@@ -8,13 +8,13 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind", "Ty
 
 export default function About() {
   return (
-    <section className="flex min-h-[calc(100vh-80px)] items-center">
-      <div className="mx-auto w-full max-w-5xl px-5 py-4 md:p-5">
-        <div className="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-10">
-          <img src="/me-sd.jpg" alt="Boburbek" className="fade-up h-32 w-32 md:h-52 md:w-52 rounded-full object-cover" />
+    <section className="flex min-h-[calc(100vh-140px)] items-center justify-center py-4 md:py-0">
+      <div className="mx-auto w-full max-w-5xl p-5">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10">
+          <img src="/me-sd.jpg" alt="Boburbek" className="fade-up h-32 w-32 md:h-52 md:w-52 rounded-full object-cover shadow-lg" />
 
           <div className="text-center md:text-left">
-            <h1 className="fade-up d200 text-[32px] md:text-[45px] font-extrabold text-[#162232]">About me</h1>
+            <h1 className="fade-up d200 text-[32px] md:text-[45px] font-extrabold tracking-tight text-[#162232] leading-tight">About me</h1>
 
             <p className="fade-up d300 mt-2 max-w-2xl text-[16px] md:text-lg text-gray-500">I build modern web applications with a focus on performance, structure, and usability.</p>
 
