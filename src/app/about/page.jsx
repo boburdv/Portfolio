@@ -26,17 +26,17 @@ export default function About() {
               ))}
             </div>
 
-            <div className="fade-up d500 mt-5 md:mt-6 flex justify-center gap-3.5 md:gap-4 md:justify-start">
-              <Link href="/Boburbek-Resume.pdf" target="_blank">
-                <Button variant="primary">View Resume</Button>
-              </Link>
+            <div className="fade-up d500 mt-5 md:mt-6 flex flex-wrap items-center justify-center gap-4 md:gap-6 md:justify-start">
+              <div className="flex items-center gap-3.5 md:gap-4">
+                <Link href="/Boburbek-Resume.pdf" target="_blank">
+                  <Button variant="primary">View Resume</Button>
+                </Link>
 
-              <Link href="/projects">
-                <Button variant="secondary">Projects</Button>
-              </Link>
-            </div>
+                <Link href="/projects">
+                  <Button variant="secondary">Projects</Button>
+                </Link>
+              </div>
 
-            <div className="fade-up d500 mt-5 md:mt-6 flex justify-center md:justify-start">
               <Social showInstagram />
             </div>
           </div>
